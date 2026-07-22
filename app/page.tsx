@@ -1,12 +1,19 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 import Navbar from "./components/navbars/Navbar";
 import StarryBackground from "./components/backgrounds/StarryBackground";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-	const router = useRouter();
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const check = () => setIsMobile(window.innerWidth <= 768);
+		check();
+		window.addEventListener("resize", check);
+		return () => window.removeEventListener("resize", check);
+	}, []);
 
 	return (
 		<StarryBackground>
@@ -30,53 +37,94 @@ export default function Home() {
 					</section>
 					<section className={styles.professionalContacts}>
 						<h2>Professional Contacts</h2>
-						<table>
-							<colgroup>
-								<col style={{ width: "30%" }} />
-								<col style={{ width: "70%" }} />
-							</colgroup>
-							<tbody>
-								<tr>
-									<td>Mobile (Singapore)</td>
-									<td>+65 8456 1706</td>
-								</tr>
-								<tr>
-									<td>Mobile (Vietnam)</td>
-									<td>+84 915 535 986</td>
-								</tr>
-								<tr>
-									<td>Email</td>
-									<td><a href="mailto:minhducduong128@gmail.com">minhducduong128@gmail.com</a></td>
-								</tr>
-								<tr>
-									<td>GitHub</td>
-									<td><a href="https://github.com/Masunori" target="_blank" rel="noopener noreferrer">https://github.com/Masunori</a></td>
-								</tr>
-								<tr>
-									<td>LinkedIn</td>
-									<td><a href="http://www.linkedin.com/in/duong-minh-duc-9a85a2317" target="_blank" rel="noopener noreferrer">http://www.linkedin.com/in/duong-minh-duc-9a85a2317</a></td>
-								</tr>
-							</tbody>
-						</table>
+						{
+							!isMobile && (
+								<table>
+									<colgroup>
+										<col style={{ width: "30%" }} />
+										<col style={{ width: "70%" }} />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>Mobile (Singapore)</td>
+											<td>+65 8456 1706</td>
+										</tr>
+										<tr>
+											<td>Mobile (Vietnam)</td>
+											<td>+84 915 535 986</td>
+										</tr>
+										<tr>
+											<td>Email</td>
+											<td><a href="mailto:minhducduong128@gmail.com">minhducduong128@gmail.com</a></td>
+										</tr>
+										<tr>
+											<td>GitHub</td>
+											<td><a href="https://github.com/Masunori" target="_blank" rel="noopener noreferrer">https://github.com/Masunori</a></td>
+										</tr>
+										<tr>
+											<td>LinkedIn</td>
+											<td><a href="http://www.linkedin.com/in/duong-minh-duc-9a85a2317" target="_blank" rel="noopener noreferrer">http://www.linkedin.com/in/duong-minh-duc-9a85a2317</a></td>
+										</tr>
+									</tbody>
+								</table>
+							)
+						}
+						{
+							isMobile && (
+								<ul className={styles.mobileContacts}>
+									<li>
+										<a href="tel:+6584561706">Mobile (Singapore) - Tap to Call</a>
+									</li>
+									<li>
+										<a href="tel:+84915535986">Mobile (Vietnam) - Tap to Call</a>
+									</li>
+									<li>	
+										<a href="mailto:minhducduong128@gmail.com">Email - Tap to Email</a>
+									</li>
+									<li>
+										<a href="https://github.com/Masunori" target="_blank" rel="noopener noreferrer">GitHub</a>
+									</li>
+									<li>
+										<a href="http://www.linkedin.com/in/duong-minh-duc-9a85a2317" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+									</li>
+								</ul>
+							)
+						}
 					</section>
 					<section className={styles.socialMediaLinks}>
 						<h2>Social Media Links</h2>
-						<table>
-							<colgroup>
-								<col style={{ width: "30%" }} />
-								<col style={{ width: "70%" }} />
-							</colgroup>
-							<tbody>
-								<tr>
-									<td>Facebook</td>
-									<td><a href="https://www.facebook.com/minhduc.duong.125323" target="_blank" rel="noopener noreferrer">https://www.facebook.com/minhduc.duong.125323</a></td>
-								</tr>
-								<tr>
-									<td>Instagram</td>
-									<td><a href="https://www.instagram.com/dmd.128/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/dmd.128/</a></td>
-								</tr>
-							</tbody>
-						</table>
+						{
+							!isMobile && (
+								<table>
+									<colgroup>
+										<col style={{ width: "30%" }} />
+										<col style={{ width: "70%" }} />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>Facebook</td>
+											<td><a href="https://www.facebook.com/minhduc.duong.125323" target="_blank" rel="noopener noreferrer">https://www.facebook.com/minhduc.duong.125323</a></td>
+										</tr>
+										<tr>
+											<td>Instagram</td>
+											<td><a href="https://www.instagram.com/dmd.128/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/dmd.128/</a></td>
+										</tr>
+									</tbody>
+								</table>
+							)
+						}
+						{
+							isMobile && (
+								<ul className={styles.mobileContacts}>
+									<li>
+										<a href="https://www.facebook.com/minhduc.duong.125323" target="_blank" rel="noopener noreferrer">Facebook</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/dmd.128/" target="_blank" rel="noopener noreferrer">Instagram</a>
+									</li>
+								</ul>
+							)
+						}
 					</section>
 				</main>
 			</div>

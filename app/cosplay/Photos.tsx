@@ -24,6 +24,7 @@ function ProjectComponent({ project }: { project: ProjectData }) {
                             alt={`${project.character} - ${index + 1}`}
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                 ))}
