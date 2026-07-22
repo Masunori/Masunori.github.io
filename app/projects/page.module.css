@@ -1,0 +1,107 @@
+.page {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.page h1 {
+    width: fit-content;
+    margin: 2rem auto 0.5rem;
+}
+
+.page ul {
+    height: calc(90vh - 9rem);
+    overflow-y: auto;
+}
+
+.page ul::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.page ul::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 0.25rem;
+}
+
+.header a {
+    color: #007fff;
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+.header a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.project {
+    margin: 2rem auto;
+    width: min(90%, 50rem);
+    height: fit-content;
+    padding: 1rem;
+    border: 0.2rem solid #888;
+    border-radius: 1rem;
+
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+
+    transition-duration: var(--default-transition-duration);
+    background-color: #121212;
+}
+
+@media (max-width: 767px) {
+    .page ul::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project img {
+        margin: 1rem auto;
+    }
+}
+
+.project:hover {
+    border-color: #8888ff;
+    background-color: #242424;
+}
+
+.project:hover p {
+    color: #ccc;
+}
+
+.project img {
+    width: 6rem;
+    height: 6rem;
+    align-self: center;
+}
+
+.project h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #888;
+    margin: 0.35rem 0;
+    text-indent: 0.5rem;
+
+    overflow-wrap: break-word;
+}
+
+.project p.link {
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    text-indent: 0.5rem;
+}
+
+.project p.link span {
+    color: rgb(126, 126, 255);
+    text-decoration: underline;
+}

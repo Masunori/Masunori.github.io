@@ -1,0 +1,143 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 7rem;
+
+	position: relative;
+
+	background: linear-gradient(to bottom, #363636AA, #36363600);
+}
+
+.navbar.pink {
+    background: linear-gradient(to bottom, #6d2639, #6d263900);
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		height: 5rem;
+	}
+
+	.navbar .logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 7rem;
+		height: 100%;
+		font-size: 1.5rem;
+	}
+
+	.dropdownButton {
+		width: fit-content;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		background-color: #3636367F;
+		border: none;
+		padding: 1rem;
+
+		font-size: 1.2rem;
+	}
+
+	.dropdownMenu {
+		position: absolute;
+		list-style-type: none;
+		top: 5rem;
+		right: 0;
+		background: linear-gradient(to left, #363636CC 0%, #363636CC 50%, #3636367F);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition-duration: var(--default-transition-duration);
+		width: 0;
+		opacity: 0;
+		white-space: nowrap;
+
+		z-index: 1000;
+	}
+
+	.dropdownMenu li {
+		width: 100%;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.dropdownMenu.show {
+		width: max(50vw, 10rem);
+		opacity: 1;
+
+		box-shadow: 0 0.25rem 1rem #007fffcc;
+	}
+
+	.navbar.pink .dropdownButton {
+		background-color: #6d2639AC;
+	}
+
+    .navbar.pink .dropdownMenu.show {
+        box-shadow: 0 0.5rem 1.25rem #f282becc;
+    }
+
+	.dropdownMenu li.active {
+		background-color: #007fff;
+	}
+
+    .navbar.pink .dropdownMenu li.active {
+        background-color: #f282be;
+        color: #484848;
+    }
+}
+
+.navbar .logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 10rem;
+	height: 7rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.navbar .navLinks {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+
+	height: 7rem;
+}
+
+.navbar .navLinks li {
+	width: fit-content;
+	height: 100%;
+	padding: 1rem;
+	transition-duration: var(--default-transition-duration);
+	font-size: 1.2rem;
+
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.navbar .navLinks li:hover {
+	background: linear-gradient(to bottom, #363636, #36363600);
+	text-decoration: underline;
+}
+
+.navbar .navLinks li.active {
+	background: linear-gradient(to bottom, #007fff7f, #007fff00);
+}
+
+.navbar.pink .navLinks li:hover {
+    background: linear-gradient(to bottom, #6d2639, #6d263900);
+    text-decoration: underline;
+}
+
+.navbar.pink .navLinks li.active {
+    background: linear-gradient(to bottom, #f282be7f, #f282be00);
+}
