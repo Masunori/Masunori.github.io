@@ -3,11 +3,13 @@
 import { useEffect, useState } from 'react';
 import useKeyBinding from './hooks/useAudioOnKey';
 import styles from './page.module.css';
-import { Chart, Note } from './utils/types';
+import { Note } from './utils/types';
 import useTaiko, { VisibleEntity } from './hooks/useTaiko';
 import parseChart from './utils/parser';
 import { readFile } from 'fs';
 import { parse } from 'path';
+
+// -0.4348
 
 type Button = "LR" | "LF" | "RR" | "RF";
 const kusushikiChartText = `
@@ -15,7 +17,7 @@ TITLE:Kusushiki
 BPM:138
 LEVEL:8
 COURSE:Oni
-OFFSET:-0.4348
+OFFSET:-0.5
 #START
 1000200110102001,
 1010202210102001,

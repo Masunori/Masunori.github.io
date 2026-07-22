@@ -31,12 +31,6 @@
     border-radius: 0.25rem;
 }
 
-@media (max-width: 767px) {
-	.page main::-webkit-scrollbar {
-		width: 0;
-	}
-}
-
 .page main h1 {
 	font-size: 3rem;
 	margin: 3rem 0;
@@ -121,4 +115,14 @@
 
 .mobileContacts li a {
 	text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+	.page main {
+		height: calc(100vh - 11rem);
+	}
+
+	.page main::-webkit-scrollbar {
+		width: 0;
+	}
 }

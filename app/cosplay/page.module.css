@@ -272,10 +272,6 @@
 }
 
 @media (max-width: 767px) {
-    .page {
-        height: calc(100vh - 5rem);
-    }
-
     .page main {
         height: auto;
         display: flex;
