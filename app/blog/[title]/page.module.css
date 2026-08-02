@@ -30,11 +30,11 @@
 }
 
 .blogPage {
-    margin: 4rem auto;
+    margin: auto;
     width: min(90%, 60rem);
-    height: calc(87vh - 4rem);
+    height: calc(90vh - 4rem);
     overflow: auto;
-    padding: 1rem;
+    padding: 4rem;
 
     transition-duration: var(--default-transition-duration);
     background-color: #12121212;
@@ -50,14 +50,15 @@
     width: 0;
 }
 
+.blogPage h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
 @media (max-width: 767px) {
     .blogPage {
         background-color: transparent;
         width: 100%;
         padding: 1rem 0;
     }
-}
-
-.blogPage h1 {
-    text-align: center;
 }

@@ -59,7 +59,8 @@ h5,
 h6,
 p,
 button,
-figcaption {
+figcaption,
+li {
   font-family: 'PF Din Text Pro', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

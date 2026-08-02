@@ -1,4 +1,4 @@
-import { ImageWithCaption } from './BlogComponents'
+import { ImageWithCaption, VideoWithCaption } from './BlogComponents'
 import styles from './blogContent.module.css'
 
 export default function Content() {
@@ -146,15 +146,285 @@ export default function Content() {
                     Scape Melbourne Central, it did not take me long to reach Melbourne Central, a mindblowingly large
                     shopping mall in the hearts of Melbourne. 
                 </p>
+                <ImageWithCaption
+                    src='/blogs/melbourne/melb-central.jpg'
+                    alt='La Trobe Street'
+                    caption='La Trobe Street'
+                />
+                <ImageWithCaption
+                    src='/blogs/melbourne/melb-central-2.jpg'
+                    alt='Melbourne Central'
+                    caption='Melbourne Central shopping mall, La Trobe Street'
+                />
                 <p>
                     And guess what? On the top floor, there is an arcade, and in the arcade, there is Taiko no Tatsujin!
                     It's a drum game, that's all you need to know.
                 </p>
                 <ImageWithCaption
-                    src='/blogs/melbourne/melb-central.jpg'
-                    alt='Melbourne Central'
-                    caption='Melbourne Central shopping mall, La Trobe Street'
+                    src='/blogs/melbourne/taiko.png'
+                    alt='Taiko no Tatsujin'
+                    caption='Taiko no Tatsujin arcade game, B. Lucky & Sons, Melbourne Central'
                 />
+                <p>
+                    From my Scape to Unimelb, I need to walk along La Trobe Street, then taking a left turn to Swanston 
+                    Street and walk straight untl I reach Unimelb. I could have taken a tram, but I prefer walking. It
+                    is my (only) source of exercise, and it is also good to know what's in the neighbourhood. 
+                </p>
+                <ImageWithCaption
+                    src='/blogs/melbourne/swanston-st.jpg'
+                    alt='Swanston Street'
+                    caption='Swanston Street'
+                />
+                <p>
+                    To wrap up my first impression segment, I have to mention Unimelb's international and exchange students'
+                    welcome day. The only part I hated about it was that it started more than a week prior to the first day 
+                    of the semester, and it was also compulsory, forcing me to leave Vietnam early. However, the event itself 
+                    was fun. I am extremely impressed by the amount of effort that Unimelb put in to ensure maximum student
+                    welfare. There were a lot of support services available, much more than what I have seen in NUS.
+                </p>
+                <p>
+                    The welcome event ended with all international and exchange students having Aussie pies for lunch. I go
+                    with the minced beef pie, and it was delicious! I even managed to take away two beef burgundy pies for 
+                    dinner, only to realise that they used red wine in the sauce and I have zero alcohol tolerance :(
+                </p>
+                <ImageWithCaption
+                    src='/blogs/melbourne/aussie-pie.jpg'
+                    alt='Aussie Pie'
+                    caption='Aussie Pie at the welcome event'
+                />
+                <p>
+                    Oh yeah, I also met other exchange students from NUS in person for the first time.
+                </p>
+            </section>
+
+            <section>
+                <h2>
+                    V - The Sydney Trip
+                </h2>
+                <p>
+                    I had more than a week before the start of the semester. My cousins also flew to Australia for a holiday,
+                    so we go to Sydney together.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/me-and-cousins.jpg'
+                    alt='Me and Cousins in Melbourne'
+                    caption='Me and my cousins in Melbourne, Australia'
+                />
+                <p>
+                    When I say "we", only my brother went with me. My sister was busy with her work. Anyway, she had been staying 
+                    in Australia for quite a while, she should have been to Sydney at least once.
+                </p>
+                <p>
+                    The flight from Melbourne to Sydney took 1 hour. My first impression was "WHAT THE HELL IS STATION ACCESS FEE???". 
+                    I had some money in my Opal card before hand, and it just straight-up wiped out my balance. Once again, I have
+                    taken Singapore's public-owned transport system for granted.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/some-station-at-sydney.jpg'
+                    alt='A station at Sydney'
+                    caption='Domestic Airport Station at Sydney, Australia'
+                />
+                <p>
+                    On the same night, we went to the Sydney Opera House. We booked a hotel in the CBD area, so it was not too far.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/sydney-harbour-bridge.jpg'
+                    alt='Sydney Harbour Bridge'
+                    caption='Sydney Harbour Bridge, Sydney, Australia'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/sydney-opera-house.jpg'
+                    alt='Sydney Opera House'
+                    caption='Sydney Opera House, Sydney, Australia'
+                />
+                <VideoWithCaption
+                    src='/blogs/melbourne/seagulls.mp4'
+                    caption='These seagulls in the Sydney Harbour scared me CB >:('
+                />
+                <p>
+                    On the second day, we booked a tour to the Blue Mountains. I don't know how do describe; it was just a mountain range. 
+                    But it looked majestic.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/three-sisters-mountain.jpg'
+                    alt='Three Sisters Mountain'
+                    caption='Three Sisters Mountain, Katoomba, Australia'
+                />
+                <p>
+                    The Blue Mountains was situated in Scenic World of Katoomba, which was about a 2-hour drive from Sydney. We managed to 
+                    try out all "forms of transport" in the Scenic World.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/scenic-railway.jpg'
+                    alt='Scenic Railway'
+                    caption='Scenic Railway, top-down view at the destination'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/scenic-railway-2.jpg'
+                    alt='Scenic Railway'
+                    caption='Scenic Railway, bottom-up view at the destination'
+                />
+                <p>
+                    The Scenic Railway features a 52-degree incline, which was the steepest in the world for a passenger railway. You can 
+                    definitely feel it as the train suddenly transitions from a horizontal to vertical position.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/ferns-in-scenic-walkway.jpg'
+                    alt='Ferns in Scenic Walkway'
+                    caption='Ferns in Scenic Walkway'
+                />
+                <p>
+                    The Scenic Walkway was a 2.4km-long walk through the ancient rainforest of the Blue Mountains. What sets it apart from 
+                    other forests is that it has an overwhelming number of ferns. Ferns have been around for more than 300 million years, 
+                    and they are one of the oldest plants on Earth. Stepping into the Scenic Walkway really felt like going back when
+                    the dinosaurs were still roaming the Earth.
+                </p>
+                <p>
+                    Then, we went to the Leura, a locality in the Blue Mountains. The town felt like a small, white village. There, we tried
+                    kangaroo meat for the first time. It was probably because the chefs masked the gamey taste of the kangaroo meat with a lot 
+                    of spices, but it felt like I was eating beef. That was the only time I touched kangaroo meat...
+                </p>
+                <p>
+                    And, the average food portion in Australia is so huge. I barely finished my meal.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/lunch-at-leura.jpg'
+                    alt='Lunch at Leura'
+                    caption='Lunch at Leura, Blue Mountains, Australia'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/ice-cream-at-leura.jpg'
+                    alt='Ice Cream at Leura'
+                    caption='(The humongous portion of) Ice Cream at Leura, Blue Mountains, Australia'
+                />
+                <p>
+                    On the same night, I took a walk to the Darling Harbour.
+                </p>
+
+                <ImageWithCaption 
+                    src='/blogs/melbourne/darling-harbour.jpg'
+                    alt='Darling Harbour'
+                    caption='Darling Harbour (bad panoramic view), Sydney, Australia'
+                />
+                <p>
+                    On the third day, my cousin and I split up. I knew a friend in Sydney who had an exchange semester in NUS before, and he
+                    was kind enough to bring me around. But before he arrived, I visited the University of Sydney. It looked like any other
+                    university, but the "selling point" was the Quadrangle, which gave off a Hogwarts vibe. In no universe or timeline would
+                    I imagine a huge castle in the middle of a university campus. And I believed the tourists taking photos around me shared
+                    the sentiment.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/quadrangle-uni-sydney.jpg'
+                    alt='Quadrangle at University of Sydney'
+                    caption='Quadrangle at University of Sydney, Sydney, Australia'
+                />
+                <p>
+                    Then, I visit the Chau Chak Wing Building nearby, which functioned as a museum and a library. I don't think there was a 
+                    central theme though; there was anything from ancient animals and countries' history to modern art and machinery. 
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/chau-chak-wing-museum.jpg'
+                    alt='Chau Chak Wing Building'
+                    caption='Some huge Lego structure in the Chau Chak Wing Building'
+                />
+                <p>
+                    Finally, my friend arrived. We took the ferry to Manly, a suburb of Sydney. The ferry travelled from the Sydney Harbour
+                    to Manly, passing the opening to the ocean. The wind was very loud.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/sydney-ferry.jpg'
+                    alt='Sydney Ferry'
+                    caption='The ferry passed the opening to the ocean'
+                />
+                <p>
+                    You can really feel the beach-y vibes in Manly.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/manly-beach.jpg'
+                    alt='Manly Beach'
+                    caption='Manly Beach, Sydney, Australia'
+                />
+                <p>
+                    After walking along the beach, I asked him what kind of Australian food I should try. We ended up having fish and chips
+                    for dinner. And as expected, the portion was huge and I could not finish it. He also introduced me to a "weird" spice: 
+                    the chicken salt. It really enhanced the taste of the fish and chips.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/fish-and-chips.jpg'
+                    alt='Fish and Chips'
+                    caption='Fish and Chips'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/chicken-salt.jpg'
+                    alt='Chicken Salt'
+                    caption='Chicken Salt'
+                />
+                <p>
+                    After dinner, we tried Yochi, a frozen yoghurt dessert brand. It originated in Australia and recently expanded to Singapore.
+                    Welp, I managed to try the original Yochi in Singapore. They have quite a unique pricing concept: you pay for the weight of 
+                    the yoghurt, so the rest of the experience was just us trying to "optimise" the proportions of the yoghurt and toppings.
+                    I managed to pull a sub-10-dollars Yochi, which was a good deal. Same for my friend.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/first-yochi.jpg'
+                    alt='First Yochi'
+                    caption='First Yochi in (both Singapore and) Australia'
+                />
+                <p>
+                    Finally, we returned to the Sydney Harbour. The night view of the Sydney Opera House and the Sydney Harbour Bridge was 
+                    very beautiful, except my phone did not have enough resolution to capture the beauty :(
+                </p>
+                <p>
+                    On the final day of the Sydney trip, I went to Hyde Park, as recomended by my friend. It had a huge fountain in the middle,
+                    and as you walked into the park, there was also a museum (I don't really know what it was called). There were a lot of war 
+                    artefacts inside.  
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/hyde-park.jpg'
+                    alt='Hyde Park'
+                    caption='Hyde Park, Sydney, Australia'
+                />
+                <VideoWithCaption 
+                    src='/blogs/melbourne/flappy-bird.mp4'
+                    caption='Some bird flapping its wings in the fountain'
+                />
+                <p>
+                    Yes, I like to take videos and pictures of random things I see. Most of my camera roll during the exchange semester was filled
+                    with random animals.
+                </p>
+                <p>
+                    With that, my Sydney trip ended. Overall, a wonderful experience. Would be an 11 out of 10 if I can attend the anime
+                    convention that happened on the weekend (I flew back during the weekday...).
+                </p>
+            </section>
+
+            <section>
+                <h2>
+                    VI - Puffing Billy, Dandenong Ranges and Yarra Valley
+                </h2>
+            </section>
+
+            <section>
+                <h2>
+                    VII - Academics
+                </h2>
+                <p>
+                    I have taken 4 modules (called subjects in Unimelb) during my exchange semester: 
+                </p>
+                <ul>
+                    <li>
+                        Physics Advanced (PHYC10001)
+                    </li>
+                    <li>
+                        Algorithms and Complexity (COMP90038)
+                    </li>
+                    <li>
+                        Game Design (INFO30009)
+                    </li>
+                    <li>
+                        Chinese 3 (CHIN20001)
+                    </li>
+                </ul>
             </section>
         </article>
     )
