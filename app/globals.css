@@ -8,27 +8,6 @@
   interpolate-size: allow-keywords;
 }
 
-@font-face {
-  font-family: 'HYWenHei';
-  src: url('/fonts/zhcn.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF Din Text Pro';
-  src: url("/fonts/PFDinTextPro-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF Din Text Pro';
-  src: url("/fonts/PFDinTextPro-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-
 html {
   height: 100%;
 }
@@ -61,7 +40,7 @@ p,
 button,
 figcaption,
 li {
-  font-family: 'PF Din Text Pro', Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -64,6 +64,7 @@ export const PROJECTS: ProjectData[] = [
         series: "The Fragrant Flower Blooms with Dignity",
         images: [
             "/cosplay/photos/waguri/waguri.jpg",
+            "/cosplay/photos/waguri/waguri_2.jpg",
         ],
         colorScheme: {
             borderColor: "#8d394d",

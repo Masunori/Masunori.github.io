@@ -36,11 +36,16 @@ export function CollapsibleImageGallery({ images }: { images: { src: string; alt
                 {isOpen ? 'Hide Gallery' : 'Show Gallery'}
             </button>
             {isOpen && (
-                <div className={styles.imageGrid}>
-                    {images.map((image, index) => (
-                        <img key={index} src={image.src} alt={image.alt} className={styles.galleryImage} />
-                    ))}
-                </div>
+                <>
+                    <div className={styles.imageGrid}>
+                        {images.map((image, index) => (
+                            <img key={index} src={image.src} alt={image.alt} className={styles.galleryImage} />
+                        ))}
+                    </div>
+                    <button onClick={toggleGallery} className={styles.toggleButton}>
+                        {isOpen ? 'Hide Gallery' : 'Show Gallery'}
+                    </button>
+                </>
             )}
         </div>
     )

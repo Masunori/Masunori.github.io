@@ -1,4 +1,4 @@
-import { ImageWithCaption, VideoWithCaption } from './BlogComponents'
+import { CollapsibleImageGallery, ImageWithCaption, VideoWithCaption } from './BlogComponents'
 import styles from './blogContent.module.css'
 
 export default function Content() {
@@ -402,6 +402,96 @@ export default function Content() {
                 <h2>
                     VI - Puffing Billy, Dandenong Ranges and Yarra Valley
                 </h2>
+                <p>
+                    After the Sydney trip, my cousin and I went to Puffing Billy, an old steam train that ran through the Dandenong Ranges.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/puffing-billy-board.jpg'
+                    alt='Puffing Billy'
+                    caption='Puffing Billy signboard, Dandenong Ranges, Australia'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/menzies-creek.jpg'
+                    alt='Menzies Creek'
+                    caption='Menzies Creek (destination), Dandenong Ranges, Australia'
+                />
+                <p>
+                    The scenes along the way and the forests were, of course, beautiful. There were about 200 numbered poles along the track
+                    to indicate the distance from the starting point. And exactly because the poles are numbered, this was unavoidable:
+                </p>
+                <VideoWithCaption 
+                    src='/blogs/melbourne/67.mp4'
+                    caption='The train passed the 67th pole'
+                />
+                <p>
+                    At the destination, there was a lake with a lot of ducks. And they can fly!
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/ducks.jpg'
+                    alt='Ducks'
+                    caption='A duck at the lake'
+                />
+                <p>
+                    After the trip, we moved to the Dandenong Ranges Botanic Gardens. Once again, we were treated to a spectacular view
+                    of the forests and the mountains.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/dandenong-btg.jpg'
+                    alt='Dandenong Ranges'
+                    caption='Dandenong Ranges Botanic Gardens, Australia'
+                />
+                <p>
+                    And this "no shit, Sherlock" name of a lake.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/the-lake.jpg'
+                    alt='The Lake'
+                    caption='The Lake'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/wild-berry.jpg'
+                    alt='Wild Berry'
+                    caption='A wild berry in the Dandenong Ranges Botanic Gardens'
+                />
+                <p>
+                    Then, we moved to the Yarra Valley, a region in Australia known for its wineries.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/grape-yard.jpg'
+                    alt='Grape Yard'
+                    caption='A grape yard in Yarra Valley, Australia'
+                />
+                <p>
+                    We also visited the Yarrawood Estate. My cousin bought some wine to bring back to Vietnam.
+                    I was not fond of wine, so I did not buy any, nor try any. But my cousin said it was good.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/goose.jpg'
+                    alt='Goose'
+                    caption='The geese guarding the vineyard at Yarrawood Estate'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/wagyu-burger.jpg'
+                    alt='Wagyu Burger'
+                    caption='Wagyu burgers at Yarrawood Estate'
+                />
+                <p>
+                    Finally, we visited the Yarra Chocolate Factory. They have both chocolate and ice cream, and
+                    both were fantastic.
+                </p>
+                <ImageWithCaption 
+                    src='/blogs/melbourne/yarra-chocolate-factory.jpg'
+                    alt='Yarra Chocolate Factory'
+                    caption='A 1-metre long chocolate bar at Yarra Chocolate Factory'
+                />
+                <ImageWithCaption 
+                    src='/blogs/melbourne/ice-cream-at-yarra.jpg'
+                    alt='Ice Cream at Yarra'
+                    caption='Ice cream at Yarra Chocolate Factory'
+                />
+                <p>
+                    Overall, fantastic experience!
+                </p>
             </section>
 
             <section>
@@ -409,22 +499,83 @@ export default function Content() {
                     VII - Academics
                 </h2>
                 <p>
+                    With all the pre-semester trips, I officially started my exchange semester at Unimelb.
+                </p>
+                <p>
                     I have taken 4 modules (called subjects in Unimelb) during my exchange semester: 
                 </p>
                 <ul>
                     <li>
-                        Physics Advanced (PHYC10001)
+                        <b>Physics 1: Advanced (PHYC10001)</b> - Elective
                     </li>
                     <li>
-                        Algorithms and Complexity (COMP90038)
+                        <b>Algorithms and Complexity (COMP90038)</b> - Core
                     </li>
                     <li>
-                        Game Design (INFO30009)
+                        <b>Game Design (INFO30009)</b> - Elective
                     </li>
                     <li>
-                        Chinese 3 (CHIN20001)
+                        <b>Chinese 3 (CHIN20001)</b> - Elective
                     </li>
                 </ul>
+                <p>
+                    Besides my core subject, I took some electives, some not offered in NUS, to explore what
+                    Unimelb has to offer, and also to enjoy them instead of grinding for grades.
+                </p>
+                <CollapsibleImageGallery 
+                    images={[
+                        { src: '/blogs/melbourne/first-physics-lecture.jpg', alt: 'Physics' },
+                        { src: '/blogs/melbourne/first-algo-lecture.jpg', alt: 'Algorithms' },
+                        { src: '/blogs/melbourne/game-design-lecture.jpg', alt: 'Game Design' },
+                        { src: '/blogs/melbourne/chinese-lesson.jpg', alt: 'Chinese' },
+                        { src: '/blogs/melbourne/game-design-prototype.jpg', alt: 'Game Design Prototype' },
+                        { src: '/blogs/melbourne/physics-lab-book.jpg', alt: 'Physics Lab Logbook' },
+                    ]}
+                />
+                <p>
+                    Actually nope! The only subject that is "kinda" for enjoyment is Game Design. The rest are for the
+                    free high grade. But everything was pass/fail, I should have just taken the subjects I enjoy.
+                </p>
+                <p>
+                    But with that being said, the subjects were fun.
+                </p>
+            </section>
+
+            <section>
+                <h2>
+                    VIII - Non-academics
+                </h2>
+                <p>
+                    Similar to NUS, Unimelb also has a lot of ways to enrich students' lives non-academically, and most prominently,
+                    the clubs and societies. I joined the Unimelb Animanga Society and Unimelb's "Student Institution for miHoyo Players (SIMP)". 
+                </p>
+                <p>
+                    It felt a bit awkward at first, but I kind of enjoy the process. I made new friends along the way, some of whom I am
+                    still in contact with today.
+                </p>
+                <p>
+                    The gallery below is the SIMP Welcome Party. It turned out that Melbourne and Unimelb in general has a bunch of cosplayers.
+                </p>
+                <CollapsibleImageGallery 
+                    images={[
+                        { src: '/blogs/melbourne/simp_1.jpg', alt: 'SIMP Welcome Party (1)' },
+                        { src: '/blogs/melbourne/simp_2.jpg', alt: 'SIMP Welcome Party (2)' },
+                        { src: '/blogs/melbourne/simp_3.jpg', alt: 'SIMP Welcome Party (3)' },
+                        { src: '/blogs/melbourne/simp_4.jpg', alt: 'SIMP Welcome Party (4)' },
+                        { src: '/blogs/melbourne/simp_5.jpg', alt: 'SIMP Welcome Party (5)' },
+                        { src: '/blogs/melbourne/simp_6.jpg', alt: 'SIMP Welcome Party (6)' },
+                    ]}
+                />
+                <p>
+                    And this was the Animanga Trivia Night. They incluced the most niche things possible to make sure that nobody scored high.
+                </p>
+                <CollapsibleImageGallery 
+                    images={[
+                        { src: '/blogs/melbourne/animanga_trivia_night_1.jpg', alt: 'Animanga Trivia Night (1)' },
+                        { src: '/blogs/melbourne/animanga_trivia_night_2.jpg', alt: 'Animanga Trivia Night (2)' },
+                        { src: '/blogs/melbourne/animanga_trivia_night_3.jpg', alt: 'Animanga Trivia Night (3)' },
+                    ]}
+                />
             </section>
         </article>
     )

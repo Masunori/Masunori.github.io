@@ -31,7 +31,8 @@
 
 .blogPage {
     margin: auto;
-    width: min(90%, 60rem);
+    padding: max(2rem, 5vh) 0;
+    width: 100%;
     height: calc(90vh - 4rem);
     overflow: auto;
     padding: 4rem;
@@ -47,7 +48,12 @@
 }
 
 .blogPage::-webkit-scrollbar {
-    width: 0;
+    width: 0.5rem;
+}
+
+.blogPage::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 0.25rem;
 }
 
 .blogPage h1 {

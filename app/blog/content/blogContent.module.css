@@ -7,12 +7,6 @@
     line-height: 1.6;
 }
 
-@media (max-width: 767px) {
-    .blogContent {
-        width: 100%;
-        padding: 2rem;
-    }
-}
 
 .imageWithCaption, .videoWithCaption {
     display: flex;
@@ -22,9 +16,6 @@
     width: 100%;
     margin: 2rem 0;
     padding: 1rem;
-
-    /* border: 0.2rem solid #242424;
-    border-radius: 1rem; */
 }
 
 .imageWithCaption img, .videoWithCaption video {
@@ -41,18 +32,41 @@
 }
 
 .collapsibleImageGallery {
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1rem auto;
     width: 100%;
+}
+
+.collapsibleImageGallery .toggleButton {
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #8888ff;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+
+    transition-duration: var(--default-transition-duration);
 }
 
 .imageGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
     width: 100%;
+}
+
+.imageGrid img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition-duration: var(--default-transition-duration);
 }
 
 .blogContent section {
@@ -80,4 +94,15 @@
     list-style-type: disc;
     margin-left: 3rem;
     font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+    .blogContent {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .imageWithCaption img, .videoWithCaption video {
+        max-width: 100%;
+    }
 }
