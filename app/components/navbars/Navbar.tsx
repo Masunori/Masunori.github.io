@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './navbar.module.css';
 
-type NavbarOption = "home" | "projects" | "taiko" | "cosplay" | "blog";
+type NavbarOption = "home" | "projects" | "taiko" | "cosplay" | "blog" | "";
 type MenuProps = {
     activeOption: NavbarOption;
 };
